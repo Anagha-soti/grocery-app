@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-3" *ngFor="let category of categories">
+      <div class="card">
+        <img class="card-img-top" src="{{'http://rjtmobile.com/grocery/images/'+ category.catImage}}" alt="Card image cap">
+         
+        <div class="card-body">
+          <h5 class="card-title">{{category.catName}}</h5>
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+          <button (click)="onClickHandler(category)" class="btn btn-primary">Select</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>

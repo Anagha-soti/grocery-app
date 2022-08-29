@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="col-lg-6">
+                <div class="wrapper">
+                    <h2>register</h2>
+                    <hr>
+                    <form #registerForm="ngForm">
+                        <!-- <h3>{{registerForm.value|json}}</h3> -->
+                        <div class="form-group">
+                            <label for="firstName">FirstName</label>
+                            <input type="text" name="firstname" id="firstName" class="form-control"ngModel>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" ngModel>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile</label>
+                            <input type="text" name="mobile" id="mobile" class="form-control" ngModel>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" ngModel>
+                        </div>
+                        <input type="submit" value="" class="btn btn-primary btn-block" >
+                        <br>
+                        <p class="text-center">
+                            <a href="/login">Already Registered? Click here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

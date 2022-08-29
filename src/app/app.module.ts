@@ -17,6 +17,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ErrorComponent } from './error/error.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     ContactPageComponent,
     HomePageComponent,
     ErrorComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

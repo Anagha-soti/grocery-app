@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user.model';
+
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-register-page',
@@ -6,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-page.component.css']
 })
 export class RegisterPageComponent implements OnInit {
+  userModel = new User();
 
-  constructor() { }
+  constructor(private auth:AuthService) {
+   }
 
   ngOnInit(): void {
   }
 
+  formSubmitted(){
+    this.auth.register(this.userModel).subscribe((response)=>{
+    console.log(response);
+    }) ;
+  }
 }
